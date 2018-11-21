@@ -1,0 +1,44 @@
+package com.rsspring.enity;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="Car")
+public class Car {
+
+    private  Integer id;
+    private  String carName;
+    private  double price;//价格
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
+    public void setCarName(String carName) {
+        this.carName = carName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", carName='" + carName + '\'' +
+                ", price=" + price +
+                '}';
+    }
+}
